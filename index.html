@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        body {
+            margin:0;
+            padding:0;
+        }
+        .container {
+            margin:0;
+            height: calc(100vh - 20px);
+            width: calc(100vw - 20px);
+            border:10px solid red;
+            display: flex;
+            justify-content: center;
+            /*justify can be subistituted with flex-start/end*/
+            align-items: center;
+        }
+
+        .container>.img_blocks {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
 </head>
 <body>
-    <h1>you work yet bro?</h1>
-    <p>change 2</p>
-</body>device-width
+    <div class="container">
+        <div class="img_blocks">
+            <img src="cat.jpg">
+            <img src="cat.jpg">
+            <img src="cat.jpg">
+            <!--<img src="cat.jpg">
+            <img src="cat.jpg">
+            <img src="cat.jpg">-->
+        </div>
+    </div>
+</body>
 </html>
